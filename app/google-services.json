@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664258770242",
+    "project_id": "costanalysisproject",
+    "storage_bucket": "costanalysisproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664258770242:android:1d37cebfe942d9e1ddc4db",
+        "android_client_info": {
+          "package_name": "com.example.spendanalyser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664258770242-iadk08rfv2u5ifcubtadfu2llp5sr29n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWZNqzm6DVjjrfvOr3bS3t1fRyZVBYqr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664258770242-iadk08rfv2u5ifcubtadfu2llp5sr29n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
