@@ -39,20 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
                 FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
-                mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Log.d("login","Process Completed");
-                        }
-                        else {
-                            Toast.makeText(MainActivity.this, "Process not Complete", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+                mAuth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         Toast.makeText(MainActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(MainActivity.this,homeActivity.class));
+                        finish();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -60,8 +52,6 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Incorrect Email or Password", Toast.LENGTH_SHORT).show();
                     }
                 });
-
-
             }
         });
 
