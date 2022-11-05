@@ -30,20 +30,6 @@
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/add_expense" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:background="#dfe3d8">
-
-            <ImageButton
-                android:id="@+id/imgbtnViewExp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/view_expense" />
-        </LinearLayout>
 
     </LinearLayout>
 

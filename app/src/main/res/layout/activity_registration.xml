@@ -15,7 +15,9 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:hint="Email Address"
-        android:inputType="textPersonName"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,6 +31,8 @@
         android:layout_marginEnd="16dp"
         android:hint="Password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtRegEmail" />
@@ -42,10 +46,11 @@
         android:layout_marginEnd="16dp"
         android:hint="Confirm Password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtRegPassword"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/edtRegPassword" />
 
     <Button
         android:id="@+id/btnRegRegister"
@@ -55,6 +60,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="48dp"
         android:text="Submit"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

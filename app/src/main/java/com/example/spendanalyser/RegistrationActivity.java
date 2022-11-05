@@ -1,9 +1,14 @@
 package com.example.spendanalyser;
 
+import static com.example.spendanalyser.MainActivity.NAME_KEY;
+import static com.example.spendanalyser.MainActivity.SHARED_PREFS;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +20,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegistrationActivity extends AppCompatActivity {
     EditText edtEmail,edtPassword,edtConPassword;
@@ -46,6 +53,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 }
 
                 FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+
 
                 firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(RegistrationActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
